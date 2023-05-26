@@ -14,7 +14,7 @@ class DashboardController extends Controller
     {
         $user = $request->user();
 
-        // Total Number of Surveys
+        // Total Number of github desktop testing
         $total = Survey::query()->where('user_id', $user->id)->count();
 
         // Latest Survey
